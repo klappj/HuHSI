@@ -1,2 +1,2 @@
 # HuHSI
-Portable HSI Based on RaspberryPi and BeryGPS-IM?U-3
+Portable HSI Based on RaspberryPi and BeryGPS-IMU-3
