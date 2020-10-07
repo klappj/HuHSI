@@ -5,9 +5,16 @@ def dms_to_deg(deg, mins,sec):
 
 # Check and see if there's an implicit assumption of positive degrees here.
 def deg_to_dm(deg):
+    if deg < 0:
+        neg = True
+        deg = -deg
+    else:
+        neg = False
     deg_out = deg//1.0
     deg = deg - deg_out
     min_out = deg*60
+    if neg:
+        deg = -deg
     return(deg_out,min_out)
 
 def lead_turn(groundspeed, inbound_course, outbound_course):
