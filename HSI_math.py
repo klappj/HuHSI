@@ -3,6 +3,7 @@ import math
 def dms_to_deg(deg, mins,sec):
     return float(deg) + float(mins)/60.0 + float(sec)/3600.0
 
+# Check and see if there's an implicit assumption of positive degrees here.
 def deg_to_dm(deg):
     deg_out = deg//1.0
     deg = deg - deg_out
